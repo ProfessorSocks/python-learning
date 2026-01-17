@@ -18,11 +18,17 @@ print(language[:])
 city = "Las Vegas"
 state = "NV"
 country = "USA"
-address = city + " " + state + ", " + country
-print(address)
+# address = city + " " + state + ", " + country
+# print(address)
 
+###formatted strings
+address = f"{city} {state}, {country}" 
+print(address)
 ### .method
 print(city.upper())
 print(address.upper())
 print(address.lower())
 print(address.replace("Las Vegas", "summerlin"))
+
+print("CA" in address)
+print("CA" not in address)
